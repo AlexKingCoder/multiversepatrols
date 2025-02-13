@@ -23,19 +23,12 @@ Esta es la versión de lanzamiento, pero estamos trabajando en montones de cosas
 Multiverse Patrols utiliza distintas herramientas alucinantes para funcionar:
 
 - [Visual Studio Code] - El mejor editor de código.
-- [Node.js] - Para el entorno de construcción de Javascript.
-- [Bcrypt] - Encriptación potente para proteger a los usuarios.
-- [Cloudinary] - Servidor para almacenar nuestras imágenes.
-- [Dotenv] - Para la carga de variables .env.
-- [Express] - Nuestro framework de trabajo de backend.
-- [Jsonwebtoken] - Clave en la identificación de nuestros usuarios.
-- [Mongoose] - Para crear nuestros modelos en la base de datos.
-- [Multer] - Para habilitar peticiones con multipart y la carga de archivos adjuntos.
-
+- [React] - Para la estructura y los componentes del juego.
+- [Framer Motion] - Animación para las transiciones entre páginas.
+- [Sass] - Para los estilos del juego.
+- [Vite] - Herramienta de apoyo para el desarrollo del juego.
 
 ## Instalación
-
-Ice Dream requiere [Node.js](https://nodejs.org/) v18+ para ejecutarse correctamente.
 
 Para iniciar la aplicación, ejecuta los siguientes comandos:
 
@@ -79,8 +72,74 @@ Estas son todas las páginas que puedes navegar en el juego:
 #### *Fin del Juego (EndGame)*
 
   *Descripción*: Aquí finaliza cada nivel. Se mostrará tu puntuación y tu deseo (si has conseguido al menos 600 puntos).
-  *Ruta:* [http://localhost:3000/end-game(id)]
+  *Ruta:* [http://localhost:3000/end-game]
 
 ### COMPONENTES
 
 El juego utiliza una serie de componentes para hacer funcionar los niveles:
+
+- **Narration**  
+  *Descripción*: Maneja la lógica de los elementos narrativos del juego.
+
+- **Challenge**  
+  *Descripción*: Maneja la lógica y llamada de los desafíos del juego.
+
+- **ScoreBoard**  
+  *Descripción*: Maneja la puntuación durante el nivel.
+
+- **Timer**  
+  *Descripción*: Maneja el tiempo disponible para cada desafío.
+
+- **Player Context**  
+  *Descripción*: Guarda el nombre del jugador y su deseo en cada nivel.
+
+- **Story Data(id)**  
+  *Descripción*: Guarda la estructura de cada nivel.
+
+- **Drag Drop Challenge**
+  *Descripción*: Maneja la lógica de los desafíos "agarrar y soltar" del juego.
+
+- **Math Challenge**  
+  *Descripción*: Maneja la lógica de los desafíos de matemáticas del juego.
+
+- **Multiple Choice Challenge**  
+  *Descripción*: Maneja la lógica de los desafíos multi-opción del juego.
+
+- **Number Guess Challenge**  
+  *Descripción*: Maneja la lógica de los desafíos de adivinar números del juego.
+
+- **Text Challenge**  
+  *Descripción*: Maneja la lógica de los desafíos de escritura libre del juego.
+
+- **Word Challenge**  
+  *Descripción*: Maneja la lógica de los desafíos de adivinar palabras del juego.
+
+## FAQ'S
+
+#### Quiero jugarlo en dispositivo móvil ####
+
+¡Genial! En ese caso, te recomendamos que utilices la pantalla en horizontal para jugar los niveles. Nuestro css está optimizado para pantallas horizontales.
+
+#### ¿Qué ocurre si no consigo multicréditos suficientes?
+
+Con independencia de tu desempeño en el nivel, siempre lo superarás. La diferencia está en que, si consigues menos de 600 multicréditos, no se ejecutará la API que convertirá tu deseo en realidad (en una imagen).
+
+#### ¿Puedo diseñar mis propios niveles?
+
+El diseño de niveles es complejo, y requiere de una serie de normas para desarrollarse. Si tienes alguna idea para nuevos niveles, te animamos a escribirnos para que las tengamos en cuenta en futuras actualizaciones :)
+Puedes contactarnos en: alex.gil95sal@gmail.com
+
+## Licencias
+
+MIT
+Historia y juego creado por Alex Gil {[KingCoder]}.
+El autor no posee los derechos de las marcas comerciales utilizadas en el juego.
+Multiverse Patrols es un juego sin ánimo de lucro.
+
+
+   [Visual Studio Code]: <https://code.visualstudio.com>
+   [React]: <https://es.react.dev>
+   [Framer Motion]: <https://www.npmjs.com/package/framer-motion>
+   [Sass]: <https://sass-lang.com>
+   [Vite]: <https://vite.dev>
+   [KingCoder]: <https://github.com/AlexKingCoder>
