@@ -1,0 +1,70 @@
+@import "../../main.scss";
+
+.number-guess {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8rem;
+  gap: 15px;
+
+  &__prompt {
+    font-size: $font-size-base;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  &__inputs {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__input {
+    width: 3.2rem;
+    height: 3.2rem;
+    text-align: center;
+    font-size: $font-size-base;
+    border: 2px solid black;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+    appearance: textfield;
+
+    &:focus {
+      outline: none;
+      border-color: #005eff;
+    }
+  }
+
+  .correct {
+    background-color: #4e8fff;
+    color: white;
+    border-color: #0040c1;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 4px 4px 2px 0px rgba(0, 0, 0, 0.75);
+    font-size: $font-size-base;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-family: $title-family;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background-color: #00b503;
+      color: white;
+    }
+  }
+
+  &__feedback {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}

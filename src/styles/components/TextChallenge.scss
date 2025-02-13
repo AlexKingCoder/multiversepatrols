@@ -1,0 +1,74 @@
+@import "../../main.scss";
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.challenge {
+    max-width: 600px;
+    max-height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+    padding: 1.5rem;
+    background: $challenge-background-color;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+    p {
+      font-size: $font-size-base;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+  
+    textarea {
+      width: 100%;
+      height: 40vh;
+      border: 2px solid $base-background-color;
+      border-radius: 8px;
+      padding: 0.8rem;
+      font-size: 16px;
+      resize: none;
+      transition: border-color 0.3s;
+  
+      &:focus {
+        border-color: #007bff;
+        outline: none;
+      }
+    }
+  
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40%;
+      height: 10%;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 4px 4px 2px 0px rgba(0, 0, 0, 0.75);
+      font-size: $font-size-base;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-family: $title-family;
+      cursor: pointer;
+      transition: background 0.3s ease;
+  
+      &:hover {
+        background-color: #00b503;
+        color: white;
+      }
+    }
+  
+    .feedback {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #28a745;
+      &.fail {
+        color: #dc3545;
+      }
+    }
+  }

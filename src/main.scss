@@ -1,0 +1,52 @@
+/*AJUSTES GENERALES*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*COLORES Y FUENTES BASE*/
+$primary-color: #333;
+$secondary-color: #ffcc00;
+$base-background-color: #f4f4f4;
+$challenge-background-color: rgba(0, 0, 0, 0.1) ;
+
+$font-family: 'Arial', sans-serif;
+$title-family: "Audiowide", cursive;
+$font-size-base: 1.2rem;
+$line-height: 1.5;
+
+body {
+  color: $primary-color;
+  font-family: $font-family;
+  font-size: $font-size-base;
+  line-height: $line-height;
+  background-color: $base-background-color;
+}
+
+/*ETIQUETAS GENERALES*/
+
+
+h1, h2, h3 {
+  font-family: $title-family;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+li {
+  font-family: $font-family;
+  list-style: none;
+}

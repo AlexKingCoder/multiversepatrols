@@ -1,0 +1,101 @@
+@import "../../main.scss";
+
+.math-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $challenge-background-color;
+    padding: 1rem;
+}
+  
+.math-box {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+  
+.math-box p {
+    font-size: $font-size-base;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+  
+.math-question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+  
+.math-question p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+  
+.math-input {
+    width: 100px;
+    height: 40px;
+    font-size: 1rem;
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+  
+.math-input:focus {
+    border-color: #005eff;
+}
+  
+.error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+}
+  
+.math-submit-button {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 4px 4px 2px 0px rgba(0, 0, 0, 0.75);
+    font-size: $font-size-base;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-family: $title-family;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  
+&:hover {
+      background-color: #00b503;
+      color: white;
+    }
+}
+  
+.math-feedback {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: $font-size-base;
+}
+
+.math-input {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+  
+.math-input::-webkit-inner-spin-button,
+.math-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

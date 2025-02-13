@@ -1,0 +1,67 @@
+@import "../../main.scss";
+
+.word-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $challenge-background-color;
+    padding: 1rem;
+  }
+  
+  .word-box {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .word-box p {
+    font-size: $font-size-base;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .word-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: $font-size-base;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .word-box button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 4px 4px 2px 0px rgba(0,0,0,0.75);
+    font-size: $font-size-base;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-family: $title-family;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  
+    &:hover {
+      background-color: #00b503;
+      color: white;
+    }
+  }
+  
+  .word-box p.feedback {
+    margin-top: 1rem;
+    font-weight: bold;
+  }  

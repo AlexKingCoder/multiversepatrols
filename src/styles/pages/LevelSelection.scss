@@ -1,0 +1,48 @@
+@import "../../main.scss";
+
+.level-selector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  
+    h2 {
+      margin-bottom: 20px;
+    }
+  
+    .levels-container {
+      width: 80%;
+      max-width: 800px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+  
+    .level {
+      width: 100%;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: $base-background-color;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s, opacity 0.2s;
+  
+      &:hover {
+        transform: scale(1.05);
+        opacity: 0.9;
+      }
+    }
+  
+    .level-1 { background: url("/public/levelSelector/nivel1.png") center/cover; }
+    .level-2 { background: url("/public/levelSelector/nivel2.png") center/cover; }
+    .level-3 { background: url("/public/levelSelector/nivel3.png") center/cover; }
+    .level-4 { background: url("/public/levelSelector/nivel4.png") center/cover; }
+    .level-5 { background: url("/public/levelSelector/nivel5.png") center/cover; }
+    .level-6 { background: url("/public/levelSelector/nivel6.png") center/cover; }
+  }
