@@ -12,15 +12,15 @@
     }
   
     .levels-container {
-      width: 80%;
-      max-width: 800px;
+      width: 90%;
+      max-width: 900px;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      justify-content: center;
     }
   
     .level {
-      width: 100%;
       height: 150px;
       display: flex;
       justify-content: center;
@@ -38,11 +38,35 @@
         opacity: 0.9;
       }
     }
-  
+
+    // Ajustes responsive
+    @media (max-width: 768px) { // Tablets
+      .levels-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+      .level {
+        height: 130px;
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) { // Móviles
+      .levels-container {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+      .level {
+        height: 120px;
+        font-size: 0.9rem;
+      }
+    }
+
+    // Fondos de niveles
     .level-1 { background: url("/public/levelSelector/nivel1.png") center/cover; }
     .level-2 { background: url("/public/levelSelector/nivel2.png") center/cover; }
     .level-3 { background: url("/public/levelSelector/nivel3.png") center/cover; }
     .level-4 { background: url("/public/levelSelector/nivel4.png") center/cover; }
     .level-5 { background: url("/public/levelSelector/nivel5.png") center/cover; }
     .level-6 { background: url("/public/levelSelector/nivel6.png") center/cover; }
-  }
+}
